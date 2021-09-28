@@ -34,10 +34,11 @@
 	}
 	&__left {
 		align-self: center;
-		z-index: 5;
+
 		@media (max-width: $md3+px) {
 			width: 65px;
 			height: 25px;
+			z-index: 10;
 			img {
 				max-width: 100%;
 			}
@@ -106,11 +107,14 @@
 			line-height: 25px;
 			font-weight: 700;
 			cursor: pointer;
-			z-index: 5;
 			&._active {
-				display: flex;
 			}
 		}
+	}
+	&__close-menu {
+		position: absolute;
+		top: 17px;
+		right: 20px;
 	}
 }
 

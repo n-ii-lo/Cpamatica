@@ -819,12 +819,12 @@ body.ie ._ibg img {
 }
 .navigation__left {
   align-self: center;
-  z-index: 5;
 }
 @media (max-width: 767.98px) {
   .navigation__left {
     width: 65px;
     height: 25px;
+    z-index: 10;
   }
   .navigation__left img {
     max-width: 100%;
@@ -902,11 +902,12 @@ body.ie ._ibg img {
     line-height: 25px;
     font-weight: 700;
     cursor: pointer;
-    z-index: 5;
   }
-  .nav-bar__icon-menu._active {
-    display: flex;
-  }
+}
+.nav-bar__close-menu {
+  position: absolute;
+  top: 17px;
+  right: 20px;
 }
 
 /*
@@ -954,6 +955,59 @@ body.ie ._ibg img {
 	}
 }
 */
+.footer {
+  background: linear-gradient(225deg, #4d4d9e 0%, #32325d 100%);
+}
+.footer__container {
+  padding: 73px 0px 42px 0px;
+  display: flex;
+}
+.footer__columns {
+  flex: 1;
+}
+
+.column__info-img {
+  margin-bottom: 15px;
+}
+.column__info-text {
+  color: #ffffff;
+  font-size: 1.6rem;
+  line-height: 25px;
+  letter-spacing: 0.1px;
+  font-weight: 400;
+}
+
+.column-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.column-nav__heading {
+  font-size: 2.2rem;
+  line-height: 35px;
+  letter-spacing: 0.1px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 3px;
+}
+.column-nav__item {
+  font-size: 1.6rem;
+  line-height: 35px;
+  letter-spacing: 0.1px;
+  color: #ffffff;
+}
+
+.copyright {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.copiright__text {
+  font-size: 1.4rem;
+  line-height: 22px;
+  letter-spacing: 0.1px;
+}
+
 .main-section {
   flex: 2 1 795px;
   padding-top: 15px;
@@ -1073,6 +1127,10 @@ body.ie ._ibg img {
   text-align: center;
   margin-bottom: 14px;
 }
+.countries-news__list {
+  margin-bottom: 37.5px;
+}
+
 .list-card {
   position: relative;
   overflow: hidden;
@@ -1095,6 +1153,38 @@ body.ie ._ibg img {
   background: linear-gradient(225deg, #4d4d9e 0%, #32325d 100%);
   opacity: 0.5;
 }
+.content-table {
+  display: flex;
+  justify-content: flex-end;
+}
+.content-table__block {
+  width: 272px;
+  height: 55px;
+  background: #ffffff;
+  position: relative;
+  border: 1px solid #d9dce4;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.content-table__circle {
+  width: 56px;
+  height: 56px;
+  background: #3dcf8e;
+  border-radius: 100%;
+  position: absolute;
+  top: -1px;
+  transform: translate(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-table__heading {
+  font-size: 1.4rem;
+  color: #3dcf8e;
+  font-weight: 700;
+  line-height: 16.8;
+  text-transform: uppercase;
+}
+
 .page {
   flex: 1 1 auto;
 }

@@ -69,21 +69,18 @@ let iconMenu = document.querySelector(".nav-bar__icon-menu");
 if (iconMenu != null) {
 	let delay = 500;
 	let menuBody = document.querySelector(".nav-bar__wrapper")
-	let closeMenu = document.querySelector(".close-menu")
 	iconMenu.addEventListener("click", function (e) {
 		if (unlock) {
 			body_lock(delay);
-			iconMenu.classList.toggle("_active");
 			menuBody.classList.toggle("_active");
-			closeMenu.classList.toggle("_active-menu");
 		}
 	});
 };
+
 function menu_close() {
-	let iconMenu = document.querySelector(".nav-bar__icon-menu");
+	let closeMenu = document.querySelector("#close");
 	let menuBody = document.querySelector(".nav-bar__wrapper");
-	iconMenu.classList.remove("_active");
-	menuBody.classList.remove("_active");
+	menuBody.classList.remove('_active')
 }
 //=================
 //BodyLock
