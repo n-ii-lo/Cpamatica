@@ -785,12 +785,13 @@ body.ie ._ibg img {
 @media (max-width: 767.98px) {
   .header {
     padding: 17px 0px 0px 0px;
+    height: 405px;
   }
 }
 .header__title {
   text-align: center;
   height: 100%;
-  font-size: 4.8rem;
+  font-size: 3.6rem;
   line-height: 135%;
   font-weight: 700;
   padding: 75px 0px 130px 0px;
@@ -802,8 +803,11 @@ body.ie ._ibg img {
 }
 @media (max-width: 767.98px) {
   .header__title {
-    padding: 80px 0px 130px 0px;
+    padding: 122px 0px 0px 0px;
     line-height: 134%;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -846,7 +850,7 @@ body.ie ._ibg img {
 }
 @media (max-width: 767.98px) {
   .nav-bar__wrapper {
-    transform: translate(100%, 0px);
+    transform: translate(0%, -100%);
     transition: transform 0.8s ease-in 0s;
     position: fixed;
     width: 100%;
@@ -1012,6 +1016,11 @@ body.ie ._ibg img {
   flex: 2 1 795px;
   padding-top: 15px;
 }
+@media (max-width: 767.98px) {
+  .main-section {
+    max-width: 100%;
+  }
+}
 
 .text {
   font-size: 1.6rem;
@@ -1036,6 +1045,14 @@ body.ie ._ibg img {
   margin-bottom: 40px;
   max-width: 700px;
 }
+@media (max-width: 991.98px) {
+  .article {
+    max-width: 100%;
+  }
+  .article:last-child {
+    margin-bottom: 80.65px;
+  }
+}
 .article *:last-child {
   margin-bottom: 0px;
 }
@@ -1056,22 +1073,57 @@ body.ie ._ibg img {
   max-width: 795px;
   margin-bottom: 43px;
 }
+@media (max-width: 991.98px) {
+  .article-cards {
+    margin-bottom: 32px;
+  }
+}
 .article-cards *:last-child {
   margin-bottom: 0px;
 }
 
 .article-card {
-  display: flex;
   border: 1px solid #c0c7d9;
   margin-bottom: 40px;
   box-shadow: 0px 5px 20px rgba(77, 77, 158, 0.21);
 }
+@media (max-width: 991.98px) {
+  .article-card {
+    margin-bottom: 30px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 767.98px) {
+  .article-card {
+    flex-direction: column;
+  }
+}
 .article-card__text {
-  padding: 20px 25px 25px 0px;
+  padding-left: 30px;
+}
+@media (max-width: 767.98px) {
+  .article-card__text {
+    padding: 15px 0px 0px 0px;
+  }
+}
+.article-card__wrap {
+  display: flex;
+  padding: 20px 25px 26px 20px;
+}
+@media (max-width: 991.98px) {
+  .article-card__wrap {
+    padding: 23px 25px 23px 20px;
+  }
+}
+@media (max-width: 767.98px) {
+  .article-card__wrap {
+    flex-direction: column;
+    padding: 20px 15px 15px 15px;
+  }
 }
 
 .editor-info {
-  padding: 20px 30px 25px 20px;
+  padding: 0px 0px 0px 0px;
   text-align: center;
 }
 .editor-info__heading {
@@ -1117,6 +1169,16 @@ body.ie ._ibg img {
 }
 .countries-news *:last-child {
   margin-bottom: 0px;
+}
+@media (max-width: 1170px) {
+  .countries-news {
+    padding-left: 40px;
+  }
+}
+@media (max-width: 991.98px) {
+  .countries-news {
+    display: none;
+  }
 }
 .countries-news__title {
   font-weight: 700;
