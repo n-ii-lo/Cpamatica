@@ -501,6 +501,9 @@ body._lock {
   align-items: center;
   padding: 50px 0px 15px 0px;
 }
+.breadcrumb ._active {
+  color: #3dcf8e;
+}
 .breadcrumb__text {
   color: #32325d;
 }
@@ -627,7 +630,7 @@ body._lock {
   max-width: 100%;
 }
 
-.more-text {
+.hide-text {
   display: none;
 }
 
@@ -669,6 +672,9 @@ body._lock {
 .list-card:hover img {
   transform: scale(1.2);
 }
+.list-card:hover h5 {
+  color: #3dcf8e;
+}
 .list-card img {
   display: block;
   transition: 1s ease;
@@ -682,6 +688,16 @@ body._lock {
   background: linear-gradient(225deg, #4d4d9e 0%, #32325d 100%);
   opacity: 0.5;
 }
+.list-card__title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 30px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
 .dropdown {
   background: #ffffff;
   border: 1px solid #d9dce4;
@@ -750,4 +766,19 @@ body._lock {
 .main-table {
   display: flex;
   justify-content: space-between;
+}
+
+.main-hover:hover {
+  transition: 0.3s ease;
+  color: #3dcf8e;
+}
+
+.btn-hover:hover {
+  background: #34B079;
+  transition: 0.3s ease;
+}
+
+.dropdown-hover:hover {
+  transition: 0.3s ease;
+  color: #34B079;
 }

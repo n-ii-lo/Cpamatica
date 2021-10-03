@@ -16,6 +16,9 @@
 	display: flex;
 	align-items: center;
 	padding: 50px 0px 15px 0px;
+	._active{
+		color: $green;
+	}
 	&__text {
 		color: #32325d;
 	}
@@ -129,7 +132,7 @@
 }
 .more-btn {
 }
-.more-text {
+.hide-text {
 	display: none;
 }
 .countries-news {
@@ -165,6 +168,9 @@
 		img {
 			transform: scale(1.2);
 		}
+		h5{
+			color: $green;
+		}
 	}
 	img {
 		display: block;
@@ -180,6 +186,13 @@
 		opacity: 0.5;
 	}
 	&__title {
+		font-size: 2.3rem;
+		font-weight: 700;
+		line-height: 30px;
+		color: $mainColor;
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
 	}
 }
 .dropdown {

@@ -86,6 +86,24 @@ body {
 	display: flex;
 	justify-content: space-between;
 }
+.main-hover{
+	&:hover{
+		transition: .3s ease;
+		color: $green;
+	}
+}
+.btn-hover{
+	&:hover{
+		background: #34B079;
+		transition: .3s ease;
+	}
+}
+.dropdown-hover{
+	&:hover{
+		transition: .3s ease;
+		color: #34B079;
+	}
+}
 
 //===================================================================================================================================
 
