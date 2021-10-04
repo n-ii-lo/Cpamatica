@@ -32,12 +32,14 @@ const closeDrop = document.querySelector(".dropdown__circle-close");
 
 openDrop.addEventListener("click", function (e) {
 	document.querySelector(".dropdown-list").classList.toggle('_active');
+	document.querySelector(".dropdown").classList.toggle('_active');
 	document.querySelector('.dropdown__circle-open').style.display = 'none';
 	document.querySelector('.dropdown__circle-close').style.display = 'block';
 });
 
 closeDrop.addEventListener("click", function (e) {
 	document.querySelector(".dropdown-list").classList.toggle('_active');
+	document.querySelector(".dropdown").classList.toggle('_active');
 	document.querySelector('.dropdown__circle-open').style.display = 'block';
 	document.querySelector('.dropdown__circle-close').style.display = 'none';
 });
