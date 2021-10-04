@@ -35,7 +35,7 @@
 			max-width: 100%;
 		}
 		@media (max-width:$md3+px){
-			 padding: 0px 0px 14px 0px; 
+			 padding: 0px 20px 14px 20px; 
 		}
 	}
 	&__info-img {
@@ -78,7 +78,7 @@
 		margin-bottom: 3px;
 		position: relative;
 		@media (max-width:$md3+px){
-			 padding: 11px 0px 11px 0px;
+			 padding: 11px 20px 11px 20px;
 			 font-size: 1.6rem;
 			 margin-bottom: 0px;
 			&::before{
@@ -88,7 +88,7 @@
 				height: 3px;
 				transform: translate(0, -50%) rotate(-45deg);
 				position: absolute;
-				right: 0px;
+				right: 20px;
 				top: 55%;
 				border-radius: 50px;
 				}
@@ -99,7 +99,7 @@
 				height: 3px;
 				transform: translate(0, -50%) rotate(45deg);
 				position: absolute;
-				right: 5px;
+				right: 25px;
 				top: 55%;
 				border-radius: 50px;
 			}
@@ -113,7 +113,7 @@
 			 display: none;
 			 &._active{
 				display: block;
-				padding: 9px 0px 8px 0px;
+				padding: 9px 20px 8px 20px;
 				border-top: 1px solid #E9EEFF;
 			 }
 		}
