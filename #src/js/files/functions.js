@@ -24,3 +24,18 @@ for (var i = 0; i < openSpollerBtn.length; i++) {
 		e.target.nextElementSibling.classList.toggle('_active');
 	});
 };
+//============================================
+//Dropdown
+
+const openDrop = document.querySelector(".dropdown__circle-open");
+const closeDrop = document.querySelector(".dropdown__circle-close");
+
+openDrop.addEventListener("click", function (e) {
+	document.querySelector(".dropdown-list").classList.toggle('_active');
+	document.getElementsByClassName('dropdown__circle-open').style.display = 'none';
+	document.getElementsByClassName('dropdown__circle-close').style.display = 'block';
+});
+
+closeDrop.addEventListener("click", function (e) {
+	document.querySelector(".dropdown-list").classList.toggle('_active');
+});

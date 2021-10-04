@@ -207,10 +207,12 @@
 		&:hover{
 			border-radius: 5px / 5px 5px 0px 0px;
 		}
-}
-.dropdown:hover .dropdown-list{
-	opacity: 1;
-	visibility: visible;
+		&__circle-open{
+			
+		}
+		&__circle-close{
+			display: none;
+		}
 }
 .dropdown-select {
 	width: 56px;
@@ -238,9 +240,11 @@
 	background: $mainColor;
 	position: absolute;
 	left: 5px;
-	visibility: hidden;
-	opacity: 0;
+	display: none;
 	transition: opacity 0.2s linear, visibility 0.2s linear;
+	&._active{
+		display: block;
+	}
 	*:last-child{
 		padding-bottom: 0px;
 	}

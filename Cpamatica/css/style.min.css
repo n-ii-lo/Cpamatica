@@ -733,10 +733,8 @@ body._lock {
 .dropdown:hover {
   border-radius: 5px/5px 5px 0px 0px;
 }
-
-.dropdown:hover .dropdown-list {
-  opacity: 1;
-  visibility: visible;
+.dropdown__circle-close {
+  display: none;
 }
 
 .dropdown-select {
@@ -767,9 +765,11 @@ body._lock {
   background: #ffffff;
   position: absolute;
   left: 5px;
-  visibility: hidden;
-  opacity: 0;
+  display: none;
   transition: opacity 0.2s linear, visibility 0.2s linear;
+}
+.dropdown-list._active {
+  display: block;
 }
 .dropdown-list *:last-child {
   padding-bottom: 0px;
