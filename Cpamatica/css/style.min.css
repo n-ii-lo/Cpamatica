@@ -555,6 +555,16 @@ body._lock {
 .more-btn {
   color: #3dcf8e;
 }
+@media (max-width: 767.98px) {
+  .more-btn {
+    position: absolute;
+    bottom: -1px;
+    right: 0px;
+    display: block;
+    background-color: #ffffff;
+    padding: 4px 5px;
+  }
+}
 
 .article-card {
   border: 1px solid #c0c7d9;
@@ -574,15 +584,19 @@ body._lock {
 }
 .article-card__text {
   padding-left: 30px;
+  overflow: hidden;
+  height: 250px;
 }
 @media (max-width: 767.98px) {
   .article-card__text {
     padding: 15px 0px 0px 0px;
+    height: 240px;
+    position: relative;
   }
 }
 .article-card__wrap {
   display: flex;
-  padding: 20px 25px 26px 20px;
+  padding: 20px 25px 27px 20px;
 }
 @media (max-width: 991.98px) {
   .article-card__wrap {
@@ -597,7 +611,7 @@ body._lock {
 }
 
 .editor-info {
-  padding: 0px 0px 0px 0px;
+  padding: 10px 0px 0px 0px;
   text-align: center;
 }
 .editor-info__heading {
@@ -821,4 +835,8 @@ body._lock {
 
 .hide-text {
   display: none;
+}
+
+.showContent {
+  height: auto;
 }

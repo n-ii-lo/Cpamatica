@@ -46,6 +46,14 @@
 }
 .more-btn {
 	color: $green;
+	@media (max-width:$md3+px){
+		 position: absolute;
+		 bottom: -1px;
+		 right: 0px; 
+		 display: block;
+		 background-color: #ffffff;
+		 padding: 4px 5px;
+	}
 }
 .article-card {
 	border: 1px solid #c0c7d9;
@@ -60,13 +68,18 @@
 	}
 	&__text {
 		padding-left: 30px;
+		overflow: hidden;
+		height: 250px;
 		@media (max-width: $md3+px) {
 			padding: 15px 0px 0px 0px;
+			height: 240px;
+			position: relative;
+			
 		}
 	}
 	&__wrap {
 		display: flex;
-		padding: 20px 25px 26px 20px;
+		padding: 20px 25px 27px 20px;
 		@media (max-width: $md2+px) {
 			padding: 23px 25px 23px 20px;
 		}
@@ -77,7 +90,7 @@
 	}
 }
 .editor-info {
-	padding: 0px 0px 0px 0px;
+	padding: 10px 0px 0px 0px;
 	text-align: center;
 	&__heading {
 		font-size: 2.2rem;

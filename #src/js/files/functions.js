@@ -43,3 +43,23 @@ closeDrop.addEventListener("click", function (e) {
 	document.querySelector('.dropdown__circle-open').style.display = 'block';
 	document.querySelector('.dropdown__circle-close').style.display = 'none';
 });
+
+// const shopCont = document.querySelector(".more-btn");
+
+// shopCont.addEventListener("click", function (e) {
+// 	document.querySelector(".article-card__text").classList.toggle('showContent');
+// 	document.querySelector('.more-btn').style.display = 'none';
+// });
+
+const openMore = document.querySelectorAll('.more-btn');
+if (openMore.length !== 0) {
+	for (var i = 0; i < openMore.length; i++) {
+		openMore[i].addEventListener('click', function () {
+			document.querySelector(".article-card__text").classList.toggle('showContent');
+			document.querySelector('.more-btn').style.display = 'none';
+		});
+	}
+}
+
+
+
