@@ -1,6 +1,14 @@
 // More text
-const moreBtn = document.querySelectorAll(".more-btn");
+const openMore = document.querySelectorAll('.more-btn');
 
+if (openMore.length !== 0) {
+	for (var i = 0; i < openMore.length; i++) {
+		openMore[i].addEventListener('click', function () {
+			document.querySelector(".article-card__text").classList.toggle('showContent');
+			document.querySelector('.more-btn').style.display = 'none';
+		});
+	}
+}
 //============================================================================================
 
 // Menu
@@ -29,19 +37,22 @@ for (var i = 0; i < openSpollerBtn.length; i++) {
 
 const openDrop = document.querySelector(".dropdown__circle-open");
 const closeDrop = document.querySelector(".dropdown__circle-close");
+const dropBlock = document.querySelector(".dropdown");
+const dropBlockList = document.querySelector(".dropdown-list");
 
-openDrop.addEventListener("click", function (e) {
-	document.querySelector(".dropdown-list").classList.toggle('_active');
-	document.querySelector(".dropdown").classList.toggle('_active');
-	document.querySelector('.dropdown__circle-open').style.display = 'none';
-	document.querySelector('.dropdown__circle-close').style.display = 'block';
+
+openDrop.addEventListener("click", function () {
+	dropBlockList.classList.toggle('_active');
+	dropBlock.classList.toggle('_active');
+	openDrop.style.display = 'none';
+	closeDrop.style.display = 'block';
 });
 
-closeDrop.addEventListener("click", function (e) {
-	document.querySelector(".dropdown-list").classList.toggle('_active');
-	document.querySelector(".dropdown").classList.toggle('_active');
-	document.querySelector('.dropdown__circle-open').style.display = 'block';
-	document.querySelector('.dropdown__circle-close').style.display = 'none';
+closeDrop.addEventListener("click", function () {
+	dropBlockList.classList.toggle('_active');
+	dropBlock.classList.toggle('_active');
+	openDrop.style.display = 'block';
+	closeDrop.style.display = 'none';
 });
 
 // const shopCont = document.querySelector(".more-btn");
@@ -51,15 +62,6 @@ closeDrop.addEventListener("click", function (e) {
 // 	document.querySelector('.more-btn').style.display = 'none';
 // });
 
-const openMore = document.querySelectorAll('.more-btn');
-if (openMore.length !== 0) {
-	for (var i = 0; i < openMore.length; i++) {
-		openMore[i].addEventListener('click', function () {
-			document.querySelector(".article-card__text").classList.toggle('showContent');
-			document.querySelector('.more-btn').style.display = 'none';
-		});
-	}
-}
 
 
 
