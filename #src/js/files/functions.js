@@ -1,14 +1,23 @@
 // More text
-const openMore = document.querySelectorAll('.more-btn');
+// const openMore = document.querySelectorAll('.more-btn');
 
-if (openMore.length !== 0) {
-	for (var i = 0; i < openMore.length; i++) {
-		openMore[i].addEventListener('click', function () {
-			document.querySelector(".article-card__text").classList.toggle('showContent');
-			document.querySelector('.more-btn').style.display = 'none';
-		});
-	}
-}
+// if (openMore.length !== 0) {
+// 	for (var i = 0; i < openMore.length; i++) {
+// 		openMore[i].addEventListener('click', function () {
+// 			document.querySelector(".article-card__text").classList.toggle('showContent');
+// 			document.querySelector('.more-btn').style.display = 'none';
+// 		});
+// 	}
+// }
+
+document.querySelectorAll('.more-btn').forEach(btn => {
+  btn.addEventListener('click', e => {
+		let textBlock = document.querySelector(".article-card__text");
+		textBlock.classList.toggle('showContent');
+		btn.style.display = 'none';
+  })
+})
+
 //============================================================================================
 
 // Menu
