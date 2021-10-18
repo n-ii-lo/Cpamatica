@@ -1,22 +1,12 @@
-// More text
-// const openMore = document.querySelectorAll('.more-btn');
+let textBlock = document.getElementsByClassName(".article-card__text");
+let btn = document.querySelectorAll('.more-btn');
+for (var i = 0; i < btn.length; i++) {
 
-// if (openMore.length !== 0) {
-// 	for (var i = 0; i < openMore.length; i++) {
-// 		openMore[i].addEventListener('click', function () {
-// 			document.querySelector(".article-card__text").classList.toggle('showContent');
-// 			document.querySelector('.more-btn').style.display = 'none';
-// 		});
-// 	}
-// }
-
-document.querySelectorAll('.more-btn').forEach(btn => {
-  btn.addEventListener('click', e => {
-		let textBlock = document.querySelector(".article-card__text");
-		textBlock.classList.toggle('showContent');
-		btn.style.display = 'none';
-  })
-})
+	btn[i].addEventListener("click", function (e) {
+		this.parentNode.classList.toggle('showContent');
+		e.target.style.display = 'none';
+	});
+};
 
 //============================================================================================
 
